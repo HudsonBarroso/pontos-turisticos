@@ -1,1 +1,1 @@
-web: gunicorn projRest.wsgi --log-file-
+web: gunicorn projRest.wsgi --log-file -
