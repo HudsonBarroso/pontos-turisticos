@@ -1,0 +1,1 @@
+web: gunicorn projRest.wsgi --log-file-
