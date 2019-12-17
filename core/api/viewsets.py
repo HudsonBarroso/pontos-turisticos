@@ -12,10 +12,10 @@ class PontoTuristicoViewSet(ModelViewSet):
     # queryset = PontoTuristico.objects.all()
     serializer_class = PontoTuristicoSerializer
     filter_backends = (SearchFilter,)
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     #permission_classes = (IsAdminUser,)
     #permission_classes = (IsAuthenticatedOrReadOnly,)
-    permission_classes = (DjangoModelPermissions,)
+    #permission_classes = (DjangoModelPermissions,)
     authentication_classes = (TokenAuthentication,)
 
     search_fields = ('nome','descricao')
