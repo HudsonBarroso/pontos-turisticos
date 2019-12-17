@@ -14,7 +14,7 @@ class PontoTuristicoViewSet(ModelViewSet):
     filter_backends = (SearchFilter,)
     permission_classes = (IsAuthenticated,)
     #permission_classes = (IsAdminUser,)
-    #permission_classes = (IsAuthenticatedOrReadOnly,)
+    permission_classes = (IsAuthenticatedOrReadOnly,)
     #permission_classes = (DjangoModelPermissions,)
     authentication_classes = (TokenAuthentication,)
 
